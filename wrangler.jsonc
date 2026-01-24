@@ -1,7 +1,7 @@
 {
     "$schema": "./node_modules/wrangler/config-schema.json",
     "main": ".open-next/worker.js",
-    "name": "my-app",
+    "name": "next-movies",
     "compatibility_date": "2026-01-23",
     "compatibility_flags": ["nodejs_compat"],
     "assets": {
