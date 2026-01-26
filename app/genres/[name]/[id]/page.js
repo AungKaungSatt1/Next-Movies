@@ -15,11 +15,12 @@ async function fetchGenre(id) {
 	return await res.json();
 }
 
-export default async function Genre({ params }) {
+export default async function Genre(props) {
+    const params = await props.params;
     const { name, id } = params;
-	const genre = await fetchGenre(id);
+    const genre = await fetchGenre(id);
 
-	return (
+    return (
 		<>
 			<h2 className="text-lg font-bold mb-4 pb-2 border-b">{name}</h2>
 			<MovieList movies={genre.results} />

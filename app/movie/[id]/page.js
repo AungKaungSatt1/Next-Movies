@@ -27,15 +27,16 @@ async function fetchCredits(id) {
 	return await res.json();
 }
 
-export default async function Movie({ params }) {
-	const { id } = params;
-	const movie = await fetchMovie(id);
-	const credits = await fetchCredits(id);
+export default async function Movie(props) {
+    const params = await props.params;
+    const { id } = params;
+    const movie = await fetchMovie(id);
+    const credits = await fetchCredits(id);
 
-	const backdrop = "http://image.tmdb.org/t/p/w1280";
-	const profile = "http://image.tmdb.org/t/p/w185";
+    const backdrop = "http://image.tmdb.org/t/p/w1280";
+    const profile = "http://image.tmdb.org/t/p/w185";
 
-	return (
+    return (
 		<>
 			<h2 className="mb-4">
 				{movie.title} ({movie.release_date.split("-")[0]})

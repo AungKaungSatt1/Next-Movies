@@ -10,7 +10,8 @@ async function fetchPerson(id) {
 	return await res.json();
 }
 
-export async function GET(req, { params }) {
+export async function GET(req, props) {
+    const params = await props.params;
     const { id } = params;
     const person = await fetchPerson(id);
 

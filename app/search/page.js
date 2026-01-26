@@ -15,11 +15,12 @@ async function fetchSearch(q) {
 	return await res.json();
 }
 
-export default async function Search({ searchParams }) {
-	const { q } = searchParams;
-	const search = await fetchSearch(q);
+export default async function Search(props) {
+    const searchParams = await props.searchParams;
+    const { q } = searchParams;
+    const search = await fetchSearch(q);
 
-	return (
+    return (
 		<>
 			<h2 className="text-lg font-bold mb-4 pb-2 border-b">
                 Search: {q}

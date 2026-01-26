@@ -1,0 +1,49 @@
+{
+  "node": {
+    "404aed6eb29325a0bdd001c1c0602823aa304d215a": {
+      "workers": {
+        "app/_not-found/page": {
+          "moduleId": 95235,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "components/Header.js"
+        },
+        "app/genres/[name]/[id]/page": {
+          "moduleId": 28191,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "components/Header.js"
+        },
+        "app/movie/[id]/page": {
+          "moduleId": 69823,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "components/Header.js"
+        },
+        "app/page": {
+          "moduleId": 6663,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "components/Header.js"
+        },
+        "app/search/page": {
+          "moduleId": 30913,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "components/Header.js"
+        }
+      },
+      "layer": {
+        "app/_not-found/page": "rsc",
+        "app/genres/[name]/[id]/page": "rsc",
+        "app/movie/[id]/page": "rsc",
+        "app/page": "rsc",
+        "app/search/page": "rsc"
+      },
+      "filename": "components/Header.js",
+      "exportedName": "$$RSC_SERVER_ACTION_0"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "D62YgBZGqvhjLx7YjItCOyYBr4extO9svMyIUY4gXvY="
+}
